@@ -4,6 +4,7 @@ numpy==2.3.4
 scipy==1.18.1
 mujoco==3.17.0
 torch==2.9.0
+matplotlib==3.11.2
 imageio==2.37.4
 imageio-ffmpeg==0.6.0
 Pillow==12.3.0

@@ -14,7 +14,7 @@ Apache-2.0 的许可证范围仍适用于上游模型部分；本文不更改第
 
 ## 运行依赖
 
-MuJoCo、NumPy、SciPy、PyTorch、imageio、Pillow 和 pytest 通过各自的 Python 分发包安装，除下述深度换算适配外，本工程没有合并这些依赖的源码。各依赖保留其分发包附带的许可证。依赖版本范围见 `pyproject.toml`；测试和训练使用的实际版本记录在结果与运行检查输出中。
+MuJoCo、NumPy、SciPy、PyTorch、Matplotlib、imageio、Pillow 和 pytest 通过各自的 Python 分发包安装，除下述深度换算适配外，本工程没有合并这些依赖的源码。各依赖保留其分发包附带的许可证。依赖版本范围见 `pyproject.toml`；测试和训练使用的实际版本记录在结果与运行检查输出中。
 
 ## MuJoCo RGB-D 深度换算
 
