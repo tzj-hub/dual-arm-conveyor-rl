@@ -1,0 +1,3 @@
+src/dual_arm_conveyor/assets/** linguist-vendored
+*.obj -diff
+*.stl -diff

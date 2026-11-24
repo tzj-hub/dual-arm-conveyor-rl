@@ -1,0 +1,26 @@
+Franka Emika Panda robot assets
+
+Upstream: Google DeepMind MuJoCo Menagerie, franka_emika_panda
+https://github.com/google-deepmind/mujoco_menagerie/tree/main/franka_emika_panda
+License: Apache License 2.0 (see LICENSE in this directory)
+
+The XML and meshes were vendored from the user's existing dual-arm-sort
+internship project. Its upstream commit was not recorded. The inherited XML
+contains local contact, end-effector site, and wrist-camera configuration
+changes. It should not be represented as an unmodified current upstream XML.
+
+The conveyor project additionally constructs a runtime scene in model.py that
+namespaces two copies, places their bases, changes actuator parameters, and
+removes unused wrist-camera configuration. It replaces the inherited five
+overlapping fingertip collision boxes with one flat contact pad per finger
+inside the same outer envelope, and calibrates finger contact friction to
+1.0 / 0.015 / 0.001. This avoids a small collision-geometry ledge that trapped
+round objects after the gripper opened. Visual meshes and mesh geometry are
+unchanged; these primitive collision changes occur only in the runtime model.
+
+Version 0.6 optionally generates new wrist-camera housings, lenses, brackets,
+and calibrated cameras at runtime. These sensor fixtures are visual-only,
+without added mass or collision geometry, and do not alter the Panda meshes.
+
+This notice records provenance and modifications; it does not replace or
+restrict the Apache-2.0 license.
